@@ -17,6 +17,7 @@ body {
 header {
   background-color: #EAC926;
   padding: 20px;
+  padding-bottom: 15px ;
 }
 
 header p {
@@ -28,6 +29,7 @@ header p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 1px 0px;
   justify-content: space-between;
 }
 
@@ -36,15 +38,25 @@ header p {
   width: 50%;
 }
 
+
+.fa-magnifying-glass {
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+
 .search-bar-container{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40%;
 }
+
 .search-bar {
   width: 50%;
   border-radius: 6px;
+  border: none;
   border-style: none;
   padding: 5px;
 }
@@ -52,6 +64,7 @@ header p {
 
 .container-2{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -69,7 +82,8 @@ header p {
 }
 
 .container-2 li {
-  margin: 15px 10px 0
+  /* margin: 15px 10px 0; */
+  margin: 8px 10px 0px
 }
 .fas.fa-bars{
   padding: 7px;
@@ -225,7 +239,7 @@ footer {
 
 
 
-
+/* Media para telefono */
 @media (max-width: 360px){
   .container-2 {
     display: none;
@@ -241,7 +255,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    position: relative;
+    width: 45%;
   }
   .search-bar {
     width: 100%;
@@ -256,15 +271,102 @@ footer {
   .banner-header {
     width: 100%;
   }
+
+  .installment-info {
+    flex-grow: 1;
+  }
 }
 
+/* Media para table */
 @media (min-width: 361px){
   .product {
     background-color: white;
     margin: 10px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+  .container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1px 0px;
+    justify-content:space-between;
+  }
+  .search-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+  }
+  
+  .search-bar {
+    width: 70%;
+    border-radius: 6px;
+    border: none;
+    border-style: none;
+    padding: 5px;
+  }
   .burger-menu {
     display: none;
   }
+  .container-banner {
+    width: 210px;
+  }
+  
+  .banner-header {
+    width: 100%;
+  }
+
+  /* .container-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .item-footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  } */
+}
+
+
+/* Media para escritorio */
+@media (min-width: 769px) {
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  
+  .search-bar {
+    width: 50%;
+    border-radius: 6px;
+    border: none;
+    border-style: none;
+    padding: 5px;
+  }
+  .container-banner {
+    width: 210px;
+  }
+  
+  .banner-header {
+    width: 100%;
+  }
+  
+  .container-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .item-footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+  }
+;
 }
