@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 
+const PORT = 8000
 const app = express();
 
 app.use(express.static("public"))
@@ -18,6 +19,6 @@ app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/login.html"))
 })
 
-app.listen(8080, () => {
-  console.log(`Servidor levantado en http://localhost:8080 `);
+app.listen(PORT, () => {
+  console.log(`Servidor levantado en http://localhost:${[PORT]} `);
 })
