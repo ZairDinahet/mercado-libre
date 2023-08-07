@@ -1,7 +1,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  /* font-size: 12px; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,6 +18,7 @@ body {
 
 header {
   background-color: #EAC926;
+  font-size: 12px;
   width: 100vw;
   padding: 20px;
   padding-bottom: 15px ;
@@ -106,22 +107,86 @@ header p {
 main {
   display: flex;
   justify-content: center;
+  font-size: 12px;
   padding: 20px;
   width: 100vw;
 }
 
-.container-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.form-container {
   background-color: white;
-  padding: 20px;
-  width: 30vw;
-  border-radius: 10px;
+  font-size: 14px;
+  padding: 30px;
+  width: 35vw;
+  border-radius: 5px;
   box-shadow: 0px 0px 5px rgb(100, 100, 100)
 }
 
+.form-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px ;
 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 300;
+}
+
+.form input {
+  border: 1px solid  #cfcece;
+  width: 100%;
+  padding: 8px;
+  font-weight: 100;
+  border-radius: 3px;
+}
+
+.form .input-item {
+  margin-bottom: 10px;
+}
+
+.radio-checkbox .input-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.radio-checkbox input{
+  width: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.button-save {
+  background-color: #1259c3;
+}
+
+.button-reset{
+  background-color: #f83636;
+}
+
+/* Login styles  */
+
+.button-login {
+  background-color: #1259c3;
+  transition: all 0.5s;
+}
+
+.button-login:hover {
+  background-color: #0e4392;
+}
 
 
 
@@ -129,6 +194,7 @@ main {
 footer {
   background-color: white;
   color: #666;
+  font-size: 12px;
   margin: 5px;
 }
 
@@ -239,6 +305,13 @@ footer {
     width: 100%;
   }
 
+  .form-container {
+    background-color: white;
+    font-size: 14px;
+    padding: 30px;
+    width: 50vw;
+
+  }
   /* .container-footer {
     display: flex;
     justify-content: space-around;

@@ -57,10 +57,10 @@ header p {
 
 .search-bar {
   width: 50%;
-  border-radius: 6px;
+  border-radius: 3px;
   border: none;
   border-style: none;
-  padding: 5px;
+  padding: 10px;
 }
 
 
@@ -145,6 +145,7 @@ main {
   background-color: white;
   width: 320px;
   margin: 10px;
+  transition: all 400ms;
 }
 
 
@@ -152,17 +153,18 @@ main {
   position: relative;
 }
 
-.fa-truck{
+.product-info i{
   display: block;
   color: #39b54a;
   font-size: 16px;
-  padding: 5px;
+  padding: 7px 5px;
   border: 1px solid #39b54a;
   background-color: #FFF;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: all 500ms;
   }
 
 
@@ -196,18 +198,18 @@ main {
 }
 
 .description {
+  display: none;
   font-size: 16px;
   margin-top: 5px;
-  color: #666;
+  color: rgba(102, 102, 102, 1);
+  transition: all 500ms;
 }
 
 
 
 
 
-
-
-footer {
+footer{
   background-color: white;
   color: #666;
   margin: 5px;
@@ -241,8 +243,9 @@ footer {
 }
 
 
+/* 480 */
 
-
+/* Solo agregar dos medias queries la de tablet y destok */
 /* Media para telefono */
 @media (max-width: 360px){
   .container-2 {
@@ -252,9 +255,7 @@ footer {
     text-align: center;
     margin-top: 20px ;
   }
-  .description {
-    display: none;
-  }
+
   .search-bar-container{
     display: flex;
     align-items: center;
@@ -264,14 +265,14 @@ footer {
   }
   .search-bar {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 3px;
     border-style: none;
-    padding: 5px;
+    padding: 8px;
   }
   .container-banner {
     width: 50%;
   }
-  
+
   .banner-header {
     width: 100%;
   }
@@ -281,12 +282,16 @@ footer {
   }
 }
 
+/* 769 */
 /* Media para table */
 @media (min-width: 361px){
   .product {
     background-color: white;
     margin: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .description{
+  display: block;
   }
   .container-1 {
     display: flex;
@@ -301,13 +306,13 @@ footer {
     justify-content: center;
     width: 45vw;
   }
-  
+
   .search-bar {
     width: 70%;
-    border-radius: 6px;
+    border-radius: 3px;
     border: none;
     border-style: none;
-    padding: 5px;
+    padding: 8px;
   }
   .burger-menu {
     display: none;
@@ -315,10 +320,14 @@ footer {
   .container-banner {
     width: 210px;
   }
-  
+
   .banner-header {
     width: 100%;
   }
+
+
+
+
 
   /* .container-footer {
     display: flex;
@@ -340,29 +349,29 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .search-bar-container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40%;
   }
-  
+
   .search-bar {
     width: 50%;
-    border-radius: 6px;
+    border-radius: 3px;
     border: none;
     border-style: none;
-    padding: 5px;
+    padding: 8px;
   }
   .container-banner {
     width: 210px;
   }
-  
+
   .banner-header {
     width: 100%;
   }
-  
+
   .container-footer {
     display: flex;
     justify-content: space-around;
@@ -372,8 +381,28 @@ footer {
     flex-direction: column;
     margin: 0 60px;
   }
+  
+  .description {
+  font-size: 10px;
+  color: rgba(102, 102, 102, 0);
+  transition: all 500ms;
+  }
   /* .fa-hand-holding-dollar {
     padding-right: 10px;
   } */
+  .product:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   
+  }
+  
+  .product:hover .product-info i {
+    transform: rotate(-90deg);
+  }
+
+  .product:hover .container-description .description {
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgba(102, 102, 102, 1);
+    transition: all 500ms;
+  }
 }

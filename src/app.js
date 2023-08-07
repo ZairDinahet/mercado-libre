@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const PORT = 8000
+const port = process.env.PORT || 8000
 const app = express();
 
 app.use(express.static("public"))
@@ -19,6 +19,6 @@ app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/login.html"))
 })
 
-app.listen(PORT, () => {
-  console.log(`Servidor levantado en http://localhost:${[PORT]} `);
+app.listen(port, () => {
+  console.log(`Servidor levantado en http://localhost:${port} `);
 })
