@@ -14,15 +14,20 @@
   <body>
     <header>
       <!-- Logo -->
-      <div class="container-1">
+      <div class="header-top-container">
         <div class="container-banner">
-          <img class="banner-header" src="/img/logo-mercado-liebre.svg" alt="Mercado Libre">
+          <a href="/">
+            <img class="banner-header" src="/img/logo-mercado-liebre.svg" alt="Mercado Libre">
+          </a>
         </div>
         <!-- Barra de búsqueda -->
         <div class="search-bar-container">
-          <input class="search-bar"  type="text" placeholder="Buscar..." > 
-            <i class="fa-solid fa-magnifying-glass">
-            </i>
+          <form action="GET">
+            <input class="search-bar"  type="text" placeholder="Buscar productos, marcas y mas..." > 
+            <div class="submit-click">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </form>
         </div>
         <!-- Comprá en cuotas y sin tarjeta de crédito -->
         <div class="installment-info">
@@ -32,7 +37,7 @@
         </div>
       </div>
 
-      <div class="container-2">
+      <div class="header-bottom-container">
         
         <nav class="nav-header-links">
           <ul class="nav-items-links">

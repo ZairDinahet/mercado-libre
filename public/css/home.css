@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  /* font-size: 12px; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,10 +16,13 @@ body {
 
 
 header {
-  background-color: #EAC926;
+  /* background-color: #EAC926; */
+  background-color: rgb(255, 240, 72);
+  font-size: 14px;
+  font-weight: 300;
   width: 100vw;
   padding: 20px;
-  padding-bottom: 15px ;
+  padding-bottom: 14px ;
 }
 
 header p {
@@ -27,50 +30,105 @@ header p {
 }
 
 
-.container-1 {
+.header-top-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   padding: 1px 0px;
-  justify-content: space-between;
 }
 
 
-.banner-header {
+/* .banner-header {
+  width: 50%;
+} */
+
+.container-banner {
   width: 50%;
 }
 
+.banner-header {
+  width: 90%;
+}
 
-.fa-magnifying-glass {
+.submit-click i{
   border: none;
   border-radius: 6px;
   padding: 5px;
 }
 
 
-.search-bar-container{
+/* .search-bar-container{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40%;
+} */
+
+.search-bar-container{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; */
+  width: 50%;
+  position: relative;
 }
 
-.search-bar {
-  width: 50%;
+.search-bar-container form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* .search-bar {
+  width: 90%;
   border-radius: 3px;
   border: none;
   border-style: none;
-  padding: 10px;
+  padding: 15px;
+} */
+
+.search-bar {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  padding: 13px;
+}
+
+.submit-click {
+  position: absolute;
+  right: 10px; /* Ajusta este valor según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 
-.container-2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
+.submit-click i{
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
 }
+
+.installment-info {
+  margin-top: 10px;
+  /* flex-grow: 1; */
+}
+
+.burger-menu {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+
+
+
+.header-bottom-container{
+  display: none;
+}
+
+
 
 .nav-items-links {
   display: flex;
@@ -83,7 +141,7 @@ header p {
   justify-content: space-between;
 }
 
-.container-2 li {
+.header-bottom-container li {
   /* margin: 15px 10px 0; */
   margin: 8px 10px 0px
 }
@@ -212,11 +270,12 @@ main {
 footer{
   background-color: white;
   color: #666;
+  font-size: 12px;
   margin: 5px;
 }
 
 .container-footer {
-  padding: 20px;
+  padding: 15px;
   margin: 50px;
   text-align: center;
 }
@@ -229,103 +288,80 @@ footer{
   padding: 15px;
 }
 
-.fa-credit-card,
-.fa-gift,
-.fa-user-shield {
-  color: #1259c3;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
 
 .title-item-footer {
   font-size: 18px;
   font-weight: 900;
 }
 
-
-/* 480 */
-
-/* Solo agregar dos medias queries la de tablet y destok */
-/* Media para telefono */
-@media (max-width: 360px){
-  .container-2 {
-    display: none;
-  }
-  .burger-menu {
-    text-align: center;
-    margin-top: 20px ;
-  }
-
-  .search-bar-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 45%;
-  }
-  .search-bar {
-    width: 100%;
-    border-radius: 3px;
-    border-style: none;
-    padding: 8px;
-  }
-  .container-banner {
-    width: 50%;
-  }
-
-  .banner-header {
-    width: 100%;
-  }
-
-  .installment-info {
-    flex-grow: 1;
-  }
+.item-footer i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+  transition:all 500ms;
 }
+
+
+.item-footer i:hover {
+  color: #8098f8;
+}
+
 
 /* 769 */
 /* Media para table */
-@media (min-width: 361px){
-  .product {
-    background-color: white;
-    margin: 10px;
-  }
+@media (min-width: 765px) and (max-width: 1023px){
 
-  .description{
-  display: block;
-  }
-  .container-1 {
+  .header-top-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     padding: 1px 0px;
-    justify-content:space-between;
-  }
-  .search-bar-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45vw;
+    justify-content: space-around;
   }
 
-  .search-bar {
-    width: 70%;
-    border-radius: 3px;
-    border: none;
-    border-style: none;
-    padding: 8px;
+  .header-bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  .burger-menu {
-    display: none;
+
+  .search-bar-container{
+    margin: 0 10px;
+    width: 30%;
+    position: relative;
+  }
+  
+  .search-bar-container form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .installment-info {
+    margin-top: 10px;
+    width: 30%;
   }
   .container-banner {
     width: 210px;
   }
-
+  
   .banner-header {
     width: 100%;
   }
+  
+  
+  .title-main {
+    margin-left: 1%;
+  }
 
-
+  .burger-menu {
+    display: none;
+  }
+  .product {
+    background-color: white;
+    margin: 10px;
+  }
 
 
 
@@ -342,27 +378,31 @@ footer{
 
 
 /* Media para escritorio */
-@media (min-width: 769px) {
-  .container-2 {
+@media (min-width: 1024px) {
+  .header-top-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 30px;
+    padding: 1px 0px;
+    justify-content: space-between;
+  }
+  
+  .header-bottom-container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 30px;
     justify-content: space-between;
     align-items: center;
   }
-
-  .search-bar-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+  
+  .burger-menu {
+    display: none;
   }
 
-  .search-bar {
-    width: 50%;
-    border-radius: 3px;
-    border: none;
-    border-style: none;
-    padding: 8px;
+  .search-bar-container{
+    width: 30%;
+    position: relative;
   }
   .container-banner {
     width: 210px;
@@ -372,10 +412,27 @@ footer{
     width: 100%;
   }
 
+  main {
+
+    width: 95vw;
+  }
+  
+  .section-main{
+    justify-content: space-around;
+
+  }
+  
+  
+  .title-main {
+    margin-left: 2vw;
+  }
+
+
   .container-footer {
     display: flex;
     justify-content: space-around;
   }
+  
   .item-footer{
     display: flex;
     flex-direction: column;
@@ -383,13 +440,12 @@ footer{
   }
   
   .description {
-  font-size: 10px;
-  color: rgba(102, 102, 102, 0);
-  transition: all 500ms;
+    display: block ;
+    font-size: 10px;
+    color: rgba(102, 102, 102, 0);
+    transition: all 500ms;
   }
-  /* .fa-hand-holding-dollar {
-    padding-right: 10px;
-  } */
+
   .product:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   
