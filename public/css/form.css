@@ -150,7 +150,7 @@ header p {
 
 .header-bottom-container a{
   color: rgba(26, 26, 26, 0.8);
-  transition: all 0.5s
+  transition: color 0.5s
 }
 
 .header-bottom-container a:hover {
@@ -241,19 +241,19 @@ main {
 
 .button-save {
   background-color: #1259c3;
-  transition: all 0.5s;
+  transition: background-color 0.5s;
 }
 
 .button-reset{
   background-color: #f83636;
-  transition: all 0.5s;
+  transition: background-color 0.5s;
 }
 
 /* Login styles  */
 
 .button-login {
   background-color: #1259c3;
-  transition: all 0.5s;
+  transition: background-color 0.5s;
 }
 
 
