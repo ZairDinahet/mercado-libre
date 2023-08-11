@@ -145,6 +145,15 @@ header p {
   /* margin: 15px 10px 0; */
   margin: 8px 10px 0px
 }
+
+.header-bottom-container a{
+  color: rgba(26, 26, 26, 0.8);
+  transition: all 0.5s
+}
+
+.header-bottom-container a:hover {
+  color: black;
+}
 .fas.fa-bars{
   padding: 7px;
   border-radius: 3px;
@@ -162,10 +171,6 @@ header p {
 
 
 
-img {
-  height: 100%;
-  width: 100%;
-}
 
 main {
   display: block;
@@ -206,6 +211,10 @@ main {
   transition: all 400ms;
 }
 
+img {
+  height: 100%;
+  max-width: 100%;
+}
 
 .product-info{
   position: relative;
@@ -303,7 +312,7 @@ footer{
 
 
 .item-footer i:hover {
-  color: #8098f8;
+  color: #0022AA;
 }
 
 
@@ -413,13 +422,15 @@ footer{
   }
 
   main {
-
-    width: 95vw;
+    width: 90vw;
   }
   
   .section-main{
     justify-content: space-around;
-
+  }
+  
+  .product {
+    width: 20%;
   }
   
   
