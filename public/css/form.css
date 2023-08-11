@@ -147,6 +147,16 @@ header p {
   /* margin: 15px 10px 0; */
   margin: 8px 10px 0px
 }
+
+.header-bottom-container a{
+  color: rgba(26, 26, 26, 0.8);
+  transition: all 0.5s
+}
+
+.header-bottom-container a:hover {
+  color: black;
+}
+
 .fas.fa-bars{
   padding: 7px;
   border-radius: 3px;
@@ -231,10 +241,12 @@ main {
 
 .button-save {
   background-color: #1259c3;
+  transition: all 0.5s;
 }
 
 .button-reset{
   background-color: #f83636;
+  transition: all 0.5s;
 }
 
 /* Login styles  */
@@ -244,10 +256,18 @@ main {
   transition: all 0.5s;
 }
 
+
 .button-login:hover {
   background-color: #0022AA;
 }
 
+.button-save:hover {
+  background-color: #0022AA;
+}
+
+.button-reset:hover{
+  background-color: #cd0000;
+}
 
 
 footer{
@@ -286,7 +306,7 @@ footer{
 
 
 .item-footer i:hover {
-  color: #8098f8;
+  color: #0022AA;
 }
 
 
