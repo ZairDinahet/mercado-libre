@@ -206,7 +206,8 @@ main {
 
 .product {
   background-color: white;
-  width: 320px;
+  /* width: 320px; */
+  width: 95%;
   margin: 10px;
   transition: all 400ms;
 }
@@ -368,8 +369,7 @@ footer{
     display: none;
   }
   .product {
-    background-color: white;
-    margin: 10px;
+    width: 47%;
   }
 
 
