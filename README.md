@@ -1,4 +1,4 @@
-## Mercado-libre - Digital House
+## Mercado Libre - Digital House
 
 Maqueta clon de Mercado Libre.
 
