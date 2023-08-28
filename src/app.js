@@ -20,5 +20,5 @@ app.get("/login", (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Servidor levantado en http://localhost:${port} `);
+  console.log(`[server] levantado en http://localhost:${port} `);
 })
